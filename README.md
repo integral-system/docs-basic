@@ -7,7 +7,7 @@ This repository contains a collection of sample documents designed to showcase t
 ## Featured Demos
 
 ### Document Creation
-* **Simple Job Letter (`letter-job.i`):** A simple but professionally looking 2-page job recommendation letter.
+* **Simple Job Letter (`letter-job.i`):** A simple but professional-looking 2-page job recommendation letter.
 * **Simple Technical Paper (`paper-technical.i`):** A simple technical paper with images and 3D surface plots.
 
 ### Math Typesetting
@@ -30,7 +30,7 @@ This repository contains a collection of sample documents designed to showcase t
 
 1. Download [INTEGRAL Desktop](https://integral.ws/download-desktop) for your platform. Extract the downloaded ZIP to a directory of your choice. We'll refer to this directory as **PATH_TO_INTEGRAL_EXTRACT_DIR**.
 
-2. Add INTEGRAL Interpreter to your system PATH using the commands below. **Note:** Replace `C:\PATH_TO_INTEGRAL_EXTRACT_DIR` or `/PATH_TO_INTEGRAL_EXTRACT_DIR` with the path to your actual extraction folder.
+2. Add INTEGRAL Interpreter to your system PATH using the commands below. When typing the following commands, make sure you replace `C:\PATH_TO_INTEGRAL_EXTRACT_DIR` or `/PATH_TO_INTEGRAL_EXTRACT_DIR` with the path to your actual extraction folder.
 
 **Windows (Command Prompt)**
 
@@ -60,7 +60,7 @@ sudo ln -s /PATH_TO_INTEGRAL_EXTRACT_DIR/exec/integral-interp-linux /usr/local/b
 
 ### Download and Execute INTEGRAL Demos
 
-1. [Download](https://github.com/integral-system/docs-basic/archive/refs/heads/main.zip) or clone this repository:
+1. [Download](https://github.com/integral-system/docs-basic/archive/refs/heads/main.zip) or clone this repository (`docs-basic`):
 
 ```shell
 git clone https://github.com/integral-system/docs-basic.git
