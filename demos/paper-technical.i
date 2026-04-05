@@ -1,0 +1,107 @@
+::my.include("../../common/includes/integral/doc-base.i");
+::my.include("../../common/includes/integral/doc-list.i");
+::my.include("../../common/includes/integral/doc-pict.i");
+
+::my.include("../../common/includes/ext/gnuplot.i");
+::my.include("../../common/includes/ext/3d-base.i");
+::my.include("../../common/includes/ext/3d-plot.i");
+
+::my.include("../../common/includes/integral-utils.i");
+
+function CDTDocumentBasic::Make(page_w, page_h)
+{
+	UpdateBaseFormat({FontSize = 100});
+
+	local t = Run()
+
+	+ Pict({Src = "../../common/assets/owl.vpc", SizeScale = 2000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 0, BaseAlign = DE_BASEALIGN_MIDDLE})
+
+	+ Gap({SpacingFactor = 512})
+
+	+ "Jim Olsen\rIntegral Systems Inc.\r810 Albert Lane\rToronto, Ontario, M3G 1T2"
+
+	+ Gap({SpacingFactor = 1024})
+
+	+ "January 12, 2019"
+
+	+ Gap({SpacingFactor = 1024})
+
+	+ "Patricia Smith\rPixel Solutions Ltd.\r128 Sheppard Street West, Suite 301\rVancouver, British Columbia, V5K 2C1"
+
+	+ Gap({SpacingFactor = 1024})
+
+	+ "Dear Patricia,"
+
+	+ Gap()
+
+	+ "It’s my pleasure to provide this letter of recommendation for Raul Payette as he seeks employment in software sales with your company. As Raul’s direct supervisor at Integral Systems, I’ve worked closely with him over the past four years. Raul showed excellent communication skills and consistently exceeded company quotas. On a personal level, Raul is charismatic and well-spoken. Both of these qualities have served him well in his role as software sales professional."
+
+	+ Gap()
+
+	+ Pict({SrcGnuplot = "plot [-10 : 10] [-5 : 5] sin(x), tan(x), 3 * sin(x - 1.5), -0.4 * x", SizeScale = 4000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 0, BaseAlign = DE_BASEALIGN_MIDDLE})
+
+	+ Gap()
+
+	+ "Due to his wife’s cross-country transfer, Raul is seeking employment in Vancouver. All of us at Integral Systems will be sad to see such a valuable and energetic individual go. Allow me to point out three examples of Raul’s strengths:"
+
+	+ Gap()
+
+	+ Bullet({Type = DE_BULLET_CIRC}) + {MarginLeft = 200, Text = "First, Raul brought great value to Integral Systems by consistently exceeding quotas and selling in the top 15% of his peers. Raul has an understanding of market trends and instincts for identifying and pursuing qualified leads. Not only does he provide stellar service to existing clients, but he’s established a number of new business-to-business and business-to-customer accounts during his time at Integral Systems."}
+
+	+ Gap()
+
+	+ Pict({SrcGnuplot = "set samples 30; set isosamples 30; set hidden3d; set xrange [-3 : 3]; set yrange [-2: 2]; splot 1 / (x * x + y * y + 1), sqrt(20 - x * x - y * y)", SizeScale = 4000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 0, BaseAlign = DE_BASEALIGN_MIDDLE})
+
+	+ Gap()
+
+	+ Bullet({Type = DE_BULLET_CIRC}) + {MarginLeft = 200, Text = "Second, Raul has a very strong grasp of technology. He knows software inside and out and helps relay technical information to customers in an accessible way. He explains our products clearly to customers and makes the most of technological avenues to gain new leads and customize his sales pitch to clients. During his first year at Integral Systems, I observed him discuss in detail with a prospective client the specific ways that our software could boost the sales of their print business. By monitoring clients’ presence across our website and blog, he provides each one with personalized service to meet their needs. Raul makes the most of technology to find new prospects, provide modern solutions, and drive results."}
+
+	+ Gap()
+
+	+ Pict({Src = "../../common/assets/3d_surface.pdc", SizeScale = 4000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 0, BaseAlign = DE_BASEALIGN_MIDDLE})
+
+	+ Gap()
+
+	+ Pict({SrcTrue3DPlot = 
+	[
+		[@(x, y) x * x - y * y,       [-1.0, 1.0], [-1.0, 1.0], [], 50, 50, [220, 220,   0, 0], [  0, 180,  0, 0]], /* saddle */
+		[@(x, y) 1.0 - x * x - y * y, [-1.0, 1.0], [-1.0, 1.0], [], 30, 30, [  0, 220, 220, 0]                   ], /* parabola */
+		[@(x, y) sin(1.5 * x),        [-1.0, 1.0], [-1.0, 1.0], [], 30, 30, [ 64,   0,  64, 0], [ 96,   0, 96, 0]]  /* sin wave */
+
+	],
+	ParamsTrue3DPlot = [null, 600, 500, DE_TRUE3D_PERSP_A],
+	SizeScale = 4000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 0, BaseAlign = DE_BASEALIGN_MIDDLE})
+
+	+ Gap()
+
+	+ Bullet({Type = DE_BULLET_CIRC}) + {MarginLeft = 200, Text = "Finally, Raul has proven himself to be a strong cultural fit here at Integral Systems. He’s always ready to lend a helping hand to his teammates and contributes during brainstorming sessions and meetings between the sales and product development teams. Last month, Raul co-led an enlightening meeting on content marketing and account management. Outside of official events, Raul also takes turns leading weekly cycling classes at our in-house gym. Raul is an active member of the Integral Systems team and supports his colleagues professionally and personally."}
+
+	+ Gap()
+
+	+ "In closing, I’d like to restate my strong support for Raul’s application to the role of software sales professional with Pixel Solutions. I’m confident that he will surpass your expectations in this new role. Raul is driven, self-confident, proactively helpful, and resourceful. I know he will continue to find success in sales. Please feel free to contact me with any other questions."
+
+	+ Gap({SpacingFactor = 748})
+
+	+ "Sincerely Yours,"
+
+	+ Gap({SpacingFactor = 480});
+
+	/* text flow on three pages */
+
+	TextFlow(0, 3, 1, 0, 300, 300, page_w - 600, page_h - 600, t);
+
+	return t;
+}
+
+
+local format = ::my.app.GetQueryVar("format", DX_FORMAT_PDF_NORMAL).tointeger();
+local zoom = ::my.app.GetQueryVar("zoom", 0.5).tofloat();
+local page = ::my.app.GetQueryVar("page", 0).tointeger();
+local page_w = 5100, page_h = 6600;
+
+local doc = CDTDocumentBasic("../../common/fontmaps/stix-1.inf");
+doc.Make(page_w, page_h);
+doc.Cleanup();
+
+::my.app.ReZoom(zoom);
+::my.app.Export(format, page_w * zoom, page_h * zoom, 2, page);
