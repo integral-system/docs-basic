@@ -126,6 +126,6 @@ integral-interp-linux demos/text_and_math.i
 
 All these sample documents will open in **INTEGRAL Document Editor**, where they can be further manipulated or exported to **PDF** or **SVG** format.
 
-#### INTEGRAL Source Files
+### INTEGRAL Source Files
 
-> INTEGRAL source files are standard UTF-8 text files with a `.i` extension. To modify them, simply use your favorite text editor. For the best experience, set your editor's syntax highlighting to **Squirrel**, **C++**, **C** or **Java**.
+INTEGRAL source files are standard UTF-8 text files with a `.i` extension. To modify them, simply use your favorite text editor. For the best experience, set your editor's syntax highlighting to **Squirrel**, **C++**, **C** or **Java**.
