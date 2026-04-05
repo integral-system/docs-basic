@@ -66,10 +66,10 @@ sudo ln -s /PATH_TO_INTEGRAL_EXTRACT_DIR/exec/integral-interp-linux /usr/local/b
 git clone https://github.com/integral-system/docs-basic.git
 ```
 
-2. Navigate to the repository's root directory in a new terminal window, then enter the **demos** directory:
+2. Navigate to the repository's root directory (`docs-basic`) in a new terminal window.
 
 ```shell
-cd demos/
+cd docs-basic/
 ```
 
 3. Execute the demos:
@@ -77,49 +77,49 @@ cd demos/
 **Windows**
 
 ```cmd
-integral-interp-win 3d_model.i
-integral-interp-win animation.i
-integral-interp-win formula_pi.i
-integral-interp-win formula_pi_dynamic.i
-integral-interp-win graphics.i
-integral-interp-win graphics_v2.i
-integral-interp-win letter-job.i
-integral-interp-win math_complex-1.i
-integral-interp-win math_complex-2.i
-integral-interp-win paper-technical.i
-integral-interp-win text_and_math.i
+integral-interp-win demos\3d_model.i
+integral-interp-win demos\animation.i
+integral-interp-win demos\formula_pi.i
+integral-interp-win demos\formula_pi_dynamic.i
+integral-interp-win demos\graphics.i
+integral-interp-win demos\graphics_v2.i
+integral-interp-win demos\letter-job.i
+integral-interp-win demos\math_complex-1.i
+integral-interp-win demos\math_complex-2.i
+integral-interp-win demos\paper-technical.i
+integral-interp-win demos\text_and_math.i
 ```
 
 **macOS**
 
 ```bash
-integral-interp-osx 3d_model.i
-integral-interp-osx animation.i
-integral-interp-osx formula_pi.i
-integral-interp-osx formula_pi_dynamic.i
-integral-interp-osx graphics.i
-integral-interp-osx graphics_v2.i
-integral-interp-osx letter-job.i
-integral-interp-osx math_complex-1.i
-integral-interp-osx math_complex-2.i
-integral-interp-osx paper-technical.i
-integral-interp-osx text_and_math.i
+integral-interp-osx demos/3d_model.i
+integral-interp-osx demos/animation.i
+integral-interp-osx demos/formula_pi.i
+integral-interp-osx demos/formula_pi_dynamic.i
+integral-interp-osx demos/graphics.i
+integral-interp-osx demos/graphics_v2.i
+integral-interp-osx demos/letter-job.i
+integral-interp-osx demos/math_complex-1.i
+integral-interp-osx demos/math_complex-2.i
+integral-interp-osx demos/paper-technical.i
+integral-interp-osx demos/text_and_math.i
 ```
 
 **Linux**
 
 ```bash
-integral-interp-linux 3d_model.i
-integral-interp-linux animation.i
-integral-interp-linux formula_pi.i
-integral-interp-linux formula_pi_dynamic.i
-integral-interp-linux graphics.i
-integral-interp-linux graphics_v2.i
-integral-interp-linux letter-job.i
-integral-interp-linux math_complex-1.i
-integral-interp-linux math_complex-2.i
-integral-interp-linux paper-technical.i
-integral-interp-linux text_and_math.i
+integral-interp-linux demos/3d_model.i
+integral-interp-linux demos/animation.i
+integral-interp-linux demos/formula_pi.i
+integral-interp-linux demos/formula_pi_dynamic.i
+integral-interp-linux demos/graphics.i
+integral-interp-linux demos/graphics_v2.i
+integral-interp-linux demos/letter-job.i
+integral-interp-linux demos/math_complex-1.i
+integral-interp-linux demos/math_complex-2.i
+integral-interp-linux demos/paper-technical.i
+integral-interp-linux demos/text_and_math.i
 ```
 
 ### View, Manipulate & Export INTEGRAL Demos
