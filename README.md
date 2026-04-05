@@ -2,24 +2,24 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-This repository contains a collection of sample documents designed to showcase the core capabilities of the **INTEGRAL Interpreter**, including high-performance 3D rendering, procedural animation and mathematical processing.
+This repository contains a collection of sample documents designed to showcase the core capabilities of the **INTEGRAL Interpreter**, including document creation, mathematical typesetting, 2D vector drawing, procedural animation and 3D rendering.
 
 ## Featured Demos
 
+### Document Creation
+* **Simple Job Letter (`letter-job.i`):** A simple but professionally looking 2-page job recommendation letter.
+* **Simple Technical Paper (`paper-technical.i`):** A simple technical paper with images and 3D surface plots.
+
+### Math Typesetting
+* **Formula Pi (`formula_pi.i`):** A math equation for approximating the constant &pi;.
+* **Formula Pi Dynamic (`formula_pi_dynamic.i`):** A dynamic version of the previous equation, where the number of square roots is set to 7.
+* **Text and Math (`text_and_math.i`):** A demonstration of mixing text, rich-text formatting and embedded mathematical equations.
+* **Math Complex (`math_complex-1.i`, `math_complex-2.i`):** Advanced mathematical typesetting using STIX v1 and STIX v2 fonts.
+
 ### Visualization & Graphics
-* **3D Model (`3d_model.i`):** Renders high-performance 3D wireframes and geometry.
+* **Graphics & Graphics V2 (`graphics.i`, `graphics_v2.i`):** Showcases 2D vector drawing.
+* **3D Model (`3d_model.i`):** Renders an embedded 3D model.
 * **Animation (`animation.i`):** Demonstrates real-time procedural animation logic.
-* **Graphics & Graphics V2 (`graphics.i`, `graphics_v2.i`):** Showcases 2D vector drawing, including shapes, gradients, and coordinate transformations.
-
-### Mathematics & Computation
-* **Formula Pi (`formula_pi.i`):** Demonstrates high-precision mathematical constant calculation and rendering.
-* **Formula Pi Dynamic (`formula_pi_dynamic.i`):** An animated version showing step-by-step convergence of Pi.
-* **Math Complex (`math_complex-1.i`, `math_complex-2.i`):** Showcases advanced handling and visualization of complex numbers and imaginary units.
-
-### Document & Text Processing
-* **Text and Math (`text_and_math.i`):** A demonstration of mixing rich-text formatting with embedded mathematical equations.
-* **Paper Technical (`paper-technical.i`):** A template for generating academic-style whitepapers with professional layouts.
-* **Letter Job (`letter-job.i`):** demonstrates automated document generation for formal business correspondence.
 
 ## Prerequisites
 - [INTEGRAL Desktop](https://integral.ws/download-desktop) (for Windows, macOS or Linux)
@@ -28,9 +28,9 @@ This repository contains a collection of sample documents designed to showcase t
 
 ### Download and Setup INTEGRAL Interpreter
 
-1. Download [INTEGRAL Desktop](https://integral.ws/download-desktop) for your platform. Extract the downloaded ZIP to a directory of your choice. We'll refer to this as **PATH_TO_INTEGRAL_EXTRACT_DIR**.
+1. Download [INTEGRAL Desktop](https://integral.ws/download-desktop) for your platform. Extract the downloaded ZIP to a directory of your choice. We'll refer to this directory as **PATH_TO_INTEGRAL_EXTRACT_DIR**.
 
-2. Add INTEGRAL Interpreter to your system PATH using the commands below. **Note:** Replace `C:\PATH_TO_INTEGRAL` or `/PATH_TO_INTEGRAL` with the path to your actual extraction folder.
+2. Add INTEGRAL Interpreter to your system PATH using the commands below. **Note:** Replace `C:\PATH_TO_INTEGRAL_EXTRACT_DIR` or `/PATH_TO_INTEGRAL_EXTRACT_DIR` with the path to your actual extraction folder.
 
 **Windows (Command Prompt)**
 
@@ -69,7 +69,7 @@ git clone https://github.com/integral-system/docs-basic.git
 2. Navigate to the repository's root directory in a new terminal window, then enter the **demos** directory:
 
 ```shell
-cd docs-basic/demos/
+cd demos/
 ```
 
 3. Execute the demos:
@@ -80,6 +80,14 @@ cd docs-basic/demos/
 integral-interp-win 3d_model.i
 integral-interp-win animation.i
 integral-interp-win formula_pi.i
+integral-interp-win formula_pi_dynamic.i
+integral-interp-win graphics.i
+integral-interp-win graphics_v2.i
+integral-interp-win letter-job.i
+integral-interp-win math_complex-1.i
+integral-interp-win math_complex-2.i
+integral-interp-win paper-technical.i
+integral-interp-win text_and_math.i
 ```
 
 **macOS**
@@ -88,6 +96,14 @@ integral-interp-win formula_pi.i
 integral-interp-osx 3d_model.i
 integral-interp-osx animation.i
 integral-interp-osx formula_pi.i
+integral-interp-osx formula_pi_dynamic.i
+integral-interp-osx graphics.i
+integral-interp-osx graphics_v2.i
+integral-interp-osx letter-job.i
+integral-interp-osx math_complex-1.i
+integral-interp-osx math_complex-2.i
+integral-interp-osx paper-technical.i
+integral-interp-osx text_and_math.i
 ```
 
 **Linux**
@@ -96,4 +112,20 @@ integral-interp-osx formula_pi.i
 integral-interp-linux 3d_model.i
 integral-interp-linux animation.i
 integral-interp-linux formula_pi.i
+integral-interp-linux formula_pi_dynamic.i
+integral-interp-linux graphics.i
+integral-interp-linux graphics_v2.i
+integral-interp-linux letter-job.i
+integral-interp-linux math_complex-1.i
+integral-interp-linux math_complex-2.i
+integral-interp-linux paper-technical.i
+integral-interp-linux text_and_math.i
 ```
+
+### View, Manipulate & Export INTEGRAL Demos
+
+All these sample documents will open in **INTEGRAL Document Editor**, where they can be further manipulated or exported to **PDF** or **SVG** format.
+
+#### INTEGRAL Source Files
+
+> INTEGRAL source files are standard UTF-8 text files with a `.i` extension. To modify them, simply use your favorite text editor. For the best experience, set your editor's syntax highlighting to **Squirrel**, **C++**, **C** or **Java**.
