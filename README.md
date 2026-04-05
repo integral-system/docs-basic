@@ -2,13 +2,24 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-This repository contains a collection of sample documents designed to showcase the core capabilities of the **INTEGRAL Interpreter**, including high-performance 3D rendering, procedural animation, and mathematical processing.
+This repository contains a collection of sample documents designed to showcase the core capabilities of the **INTEGRAL Interpreter**, including high-performance 3D rendering, procedural animation and mathematical processing.
 
 ## Featured Demos
 
-* **3D Model:** Renders high-performance 3D wireframes and geometry.
-* **Animation:** Demonstrates real-time procedural animation logic.
-* **Formula Pi:** Showcases mathematical precision and complex formula processing.
+### Visualization & Graphics
+* **3D Model (`3d_model.i`):** Renders high-performance 3D wireframes and geometry.
+* **Animation (`animation.i`):** Demonstrates real-time procedural animation logic.
+* **Graphics & Graphics V2 (`graphics.i`, `graphics_v2.i`):** Showcases 2D vector drawing, including shapes, gradients, and coordinate transformations.
+
+### Mathematics & Computation
+* **Formula Pi (`formula_pi.i`):** Demonstrates high-precision mathematical constant calculation and rendering.
+* **Formula Pi Dynamic (`formula_pi_dynamic.i`):** An animated version showing step-by-step convergence of Pi.
+* **Math Complex (`math_complex-1.i`, `math_complex-2.i`):** Showcases advanced handling and visualization of complex numbers and imaginary units.
+
+### Document & Text Processing
+* **Text and Math (`text_and_math.i`):** A demonstration of mixing rich-text formatting with embedded mathematical equations.
+* **Paper Technical (`paper-technical.i`):** A template for generating academic-style whitepapers with professional layouts.
+* **Letter Job (`letter-job.i`):** demonstrates automated document generation for formal business correspondence.
 
 ## Prerequisites
 - [INTEGRAL Desktop](https://integral.ws/download-desktop) (for Windows, macOS or Linux)
