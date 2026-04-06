@@ -18,9 +18,9 @@ This repository contains a collection of sample documents designed to showcase t
 * **Text and Math (`text_and_math.i`):** A demonstration of mixing text, rich-text formatting and embedded mathematical equations.
 * **Math Complex (`math_complex-1.i`, `math_complex-2.i`):** Advanced mathematical typesetting using STIX v1 and STIX v2 fonts.
 
-![INTEGRAL Basic Document Screenshot - 2](https://github.com/user-attachments/assets/865f766e-d96d-46f9-a097-6993280e1ab1)
+![INTEGRAL Basic Document Screenshot - 2](https://github.com/user-attachments/assets/1dc75446-f246-4dc2-b2fd-316bc548db4a)
 
-![INTEGRAL Basic Document Screenshot - 3](https://github.com/user-attachments/assets/1dc75446-f246-4dc2-b2fd-316bc548db4a)
+![INTEGRAL Basic Document Screenshot - 3](https://github.com/user-attachments/assets/865f766e-d96d-46f9-a097-6993280e1ab1)
 
 ### Visualization & Graphics
 * **Graphics & Graphics V2 (`graphics.i`, `graphics_v2.i`):** Showcases 2D vector drawing.
