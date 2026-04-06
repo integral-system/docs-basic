@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-This repository contains a collection of sample documents designed to showcase the core capabilities of the **INTEGRAL Interpreter**: document creation, mathematical typesetting, 2D vector drawing, simple animation and 3D rendering.
+This repository contains a collection of sample documents designed to showcase the core capabilities of the **INTEGRAL Interpreter**: document creation, mathematical typesetting, 2D vector drawing, simple animation, and 3D model embedding and rendering.
 
 ## Featured Demos
 
