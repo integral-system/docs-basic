@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-This repository contains a collection of sample documents designed to showcase the core capabilities of the **INTEGRAL Interpreter**, including document creation, mathematical typesetting, 2D vector drawing, procedural animation and 3D rendering.
+This repository contains a collection of sample documents designed to showcase the core capabilities of the **INTEGRAL Interpreter**: document creation, mathematical typesetting, 2D vector drawing, simple animation and 3D rendering.
 
 ## Featured Demos
 
@@ -19,7 +19,7 @@ This repository contains a collection of sample documents designed to showcase t
 ### Visualization & Graphics
 * **Graphics & Graphics V2 (`graphics.i`, `graphics_v2.i`):** Showcases 2D vector drawing.
 * **3D Model (`3d_model.i`):** Renders an embedded 3D model.
-* **Animation (`animation.i`):** Demonstrates real-time procedural animation logic.
+* **Animation (`animation.i`):** Demonstrates how to create a simple animated GIF.
 
 ## Prerequisites
 - [INTEGRAL Desktop](https://integral.ws/download-desktop) (for Windows, macOS or Linux)
