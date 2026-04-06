@@ -122,9 +122,15 @@ integral-interp-linux demos/paper-technical.i
 integral-interp-linux demos/text_and_math.i
 ```
 
-### View, Manipulate & Export INTEGRAL Demos
+### View, Manipulate & Export
 
 All these sample documents will open in **INTEGRAL Document Editor**, where they can be further manipulated or exported to **PDF** or **SVG** format.
+
+![INTEGRAL Document Editor Screenshot - Format Text](https://github.com/user-attachments/assets/f410027d-278c-4b0c-b871-9ddab159ea92)
+
+![INTEGRAL Document Editor Screenshot - Print / PDF](https://github.com/user-attachments/assets/9f384004-0629-48c8-80e0-5994e1861b3c)
+
+![INTEGRAL Document Editor Screenshot - Export To SVG](https://github.com/user-attachments/assets/c4622149-fb4b-496e-8a97-e1e110cf95c7)
 
 ### INTEGRAL Source Files
 
