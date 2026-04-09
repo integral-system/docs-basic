@@ -7,25 +7,25 @@ This repository contains a collection of sample documents designed to showcase t
 ## Featured Demos
 
 ### Document Creation
-* **Simple Job Letter (`letter-job.i`):** A simple but professional-looking 2-page job recommendation letter.
-* **Simple Technical Paper (`paper-technical.i`):** A simple technical paper with images and 3D surface plots.
+* **Simple Job Letter** ([letter-job.i](demos/letter-job.i)): A simple but professional-looking 2-page job recommendation letter.
+* **Simple Technical Paper** ([paper-technical.i](demos/paper-technical.i)): A simple technical paper with images and 3D surface plots.
 
 ![INTEGRAL Basic Document Screenshot - 1](https://github.com/user-attachments/assets/aa61572a-5371-441b-b55d-f107dd881793)
 
 ### Math Typesetting
-* **Formula Pi (`formula_pi.i`):** A math equation for approximating the constant &pi; based on the limit of nested square roots (see https://functions.wolfram.com/02.03.09.0015.01).
-* **Formula Pi Dynamic (`formula_pi_dynamic.i`):** A dynamic version of the previous equation, where the number of nested square roots is set to 7.
-* **Text and Math (`text_and_math.i`):** A demonstration of mixing text, rich-text formatting and embedded mathematical equations.
-* **Math Complex (`math_complex-1.i`, `math_complex-2.i`):** Advanced mathematical typesetting using STIX v1 and STIX v2 fonts.
+* **Formula Pi** ([formula_pi.i](demos/formula_pi.i)): A math equation for approximating the constant &pi; based on the limit of nested square roots (see https://functions.wolfram.com/02.03.09.0015.01).
+* **Formula Pi Dynamic** ([formula_pi_dynamic.i](demos/formula_pi_dynamic.i)): A dynamic version of the previous equation, where the number of nested square roots is set to 7.
+* **Text and Math** ([text_and_math.i](demos/text_and_math.i)): A demonstration of mixing text, rich-text formatting and embedded mathematical equations.
+* **Math Complex** ([math_complex-1.i](demos/math_complex-1.i), [math_complex-2.i](demos/math_complex-2.i)): Advanced mathematical typesetting using STIX v1 and STIX v2 fonts.
 
 ![INTEGRAL Basic Document Screenshot - 2](https://github.com/user-attachments/assets/1dc75446-f246-4dc2-b2fd-316bc548db4a)
 
 ![INTEGRAL Basic Document Screenshot - 3](https://github.com/user-attachments/assets/865f766e-d96d-46f9-a097-6993280e1ab1)
 
 ### Visualization & Graphics
-* **Graphics & Graphics V2 (`graphics.i`, `graphics_v2.i`):** Showcases 2D vector drawing.
-* **3D Model (`3d_model.i`):** Renders an embedded 3D model.
-* **Animation (`animation.i`):** Demonstrates how to create a simple animated GIF.
+* **Graphics & Graphics V2** ([graphics.i](demos/graphics.i), [graphics_v2.i](demos/graphics_v2.i)): Showcases 2D vector drawing.
+* **3D Model** ([3d_model.i](demos/3d_model.i)): Renders an embedded 3D model.
+* **Animation** ([animation.i](demos/animation.i)): Demonstrates how to create a simple animated GIF.
 
 ![INTEGRAL Basic Document Screenshot - 4](https://github.com/user-attachments/assets/655c2f69-aa95-4d74-a4dd-b3f8989b9450)
 
