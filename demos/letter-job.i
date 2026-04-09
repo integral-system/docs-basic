@@ -1,6 +1,6 @@
-::my.include("../../common/includes/integral/doc-base.i");
-::my.include("../../common/includes/integral/doc-list.i");
-::my.include("../../common/includes/integral/doc-pict.i");
+::my.include("../integral/common/includes/integral/doc-base.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/integral/doc-list.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/integral/doc-pict.i", DV_DIR_EXE);
 
 function CDTDocumentBasic::Make(page_w, page_h)
 {
@@ -8,7 +8,7 @@ function CDTDocumentBasic::Make(page_w, page_h)
 
 	local t = Run()
 
-	+ Pict({Src = "../../common/assets/integral-hor.png", SizeScale = 1000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 2, BaseAlign = DE_BASEALIGN_MIDDLE})
+	+ Pict({Src = "assets/integral-hor.png", SizeScale = 1000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 2, BaseAlign = DE_BASEALIGN_MIDDLE})
 
 	+ "Jim Olsen\rIntegral Systems Inc.\r810 Albert Lane\rToronto, Ontario, M3G 1T2"
 
@@ -54,7 +54,7 @@ function CDTDocumentBasic::Make(page_w, page_h)
 
 	+ Gap({SpacingFactor = 480})
 
-	+ Pict({Src = "../../common/assets/signature-jo.png", SizeScale = 1500, NewlineFlag = 2, BaseAlign = DE_BASEALIGN_MIDDLE}) + "Jim Olsen\rIntegral Systems Inc.";
+	+ Pict({Src = "assets/signature-jo.png", SizeScale = 1500, NewlineFlag = 2, BaseAlign = DE_BASEALIGN_MIDDLE}) + "Jim Olsen\rIntegral Systems Inc.";
 
 	/* text flow on two pages */
 
@@ -69,7 +69,7 @@ local zoom = ::my.app.GetQueryVar("zoom", 0.5).tofloat();
 local page = ::my.app.GetQueryVar("page", 0).tointeger();
 local page_w = 5100, page_h = 6600;
 
-local doc = CDTDocumentBasic("../../common/fontmaps/stix-1.inf");
+local doc = CDTDocumentBasic("fontmaps/stix-1.inf");
 doc.Make(page_w, page_h);
 doc.Cleanup();
 

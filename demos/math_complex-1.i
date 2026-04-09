@@ -1,7 +1,7 @@
-::my.include("../../common/includes/integral/doc-base.i");
-::my.include("../../common/includes/integral/doc-list.i");
-::my.include("../../common/includes/integral/doc-table.i");
-::my.include("../../common/includes/integral/doc-math.i");
+::my.include("../integral/common/includes/integral/doc-base.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/integral/doc-list.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/integral/doc-table.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/integral/doc-math.i", DV_DIR_EXE);
 
 function CDTDocumentBasic::Make(level, page_w, page_h)
 {
@@ -75,7 +75,7 @@ local level = ::my.app.GetQueryVar("level", 5).tointeger();
 local zoom = 0.06 + level * 0.02;
 local page_w = 8200, page_h = 7200;
 
-local doc = CDTDocumentBasic("../../common/fontmaps/stix-1.inf");
+local doc = CDTDocumentBasic("fontmaps/stix-1.inf");
 doc.Make(level, page_w, page_h);
 doc.Cleanup();
 

@@ -1,6 +1,6 @@
-::my.include("../../common/includes/integral/doc-base.i");
-::my.include("../../common/includes/integral/doc-table.i");
-::my.include("../../common/includes/integral/doc-math.i");
+::my.include("../integral/common/includes/integral/doc-base.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/integral/doc-table.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/integral/doc-math.i", DV_DIR_EXE);
 
 function CDTDocumentBasic::Formula_Pi(label)
 {
@@ -81,7 +81,7 @@ local page = ::my.app.GetQueryVar("page", 0).tointeger();
 local zoom = 0.06 + level * 0.02;
 local page_w = 5200, page_h = 3000;
 
-local doc = CDTDocumentBasic("../../common/fontmaps/stix-1.inf");
+local doc = CDTDocumentBasic("fontmaps/stix-1.inf");
 doc.Make(level, page_w, page_h);
 doc.Cleanup();
 

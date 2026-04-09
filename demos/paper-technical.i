@@ -1,12 +1,12 @@
-::my.include("../../common/includes/integral/doc-base.i");
-::my.include("../../common/includes/integral/doc-list.i");
-::my.include("../../common/includes/integral/doc-pict.i");
+::my.include("../integral/common/includes/integral/doc-base.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/integral/doc-list.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/integral/doc-pict.i", DV_DIR_EXE);
 
-::my.include("../../common/includes/ext/gnuplot.i");
-::my.include("../../common/includes/ext/3d-base.i");
-::my.include("../../common/includes/ext/3d-plot.i");
+::my.include("../integral/common/includes/ext/gnuplot.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/ext/3d-base.i", DV_DIR_EXE);
+::my.include("../integral/common/includes/ext/3d-plot.i", DV_DIR_EXE);
 
-::my.include("../../common/includes/integral-utils.i");
+::my.include("../integral/common/includes/integral-utils.i", DV_DIR_EXE);
 
 function CDTDocumentBasic::Make(page_w, page_h)
 {
@@ -14,7 +14,7 @@ function CDTDocumentBasic::Make(page_w, page_h)
 
 	local t = Run()
 
-	+ Pict({Src = "../../common/assets/owl.vpc", SizeScale = 2000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 0, BaseAlign = DE_BASEALIGN_MIDDLE})
+	+ Pict({Src = "assets/owl.vpc", SizeScale = 2000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 0, BaseAlign = DE_BASEALIGN_MIDDLE})
 
 	+ Gap({SpacingFactor = 512})
 
@@ -58,7 +58,7 @@ function CDTDocumentBasic::Make(page_w, page_h)
 
 	+ Gap()
 
-	+ Pict({Src = "../../common/assets/3d_surface.pdc", SizeScale = 4000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 0, BaseAlign = DE_BASEALIGN_MIDDLE})
+	+ Pict({Src = "assets/3d_surface.pdc", SizeScale = 4000, RunFormat = {Align = DE_ALIGN_CENTER /*, SkewHor = -12*/}, NewlineFlag = 0, BaseAlign = DE_BASEALIGN_MIDDLE})
 
 	+ Gap()
 
@@ -99,7 +99,7 @@ local zoom = ::my.app.GetQueryVar("zoom", 0.5).tofloat();
 local page = ::my.app.GetQueryVar("page", 0).tointeger();
 local page_w = 5100, page_h = 6600;
 
-local doc = CDTDocumentBasic("../../common/fontmaps/stix-1.inf");
+local doc = CDTDocumentBasic("fontmaps/stix-1.inf");
 doc.Make(page_w, page_h);
 doc.Cleanup();
 

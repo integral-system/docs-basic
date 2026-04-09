@@ -1,4 +1,4 @@
-::my.include("../../common/includes/integral/doc-base.i");
+::my.include("../integral/common/includes/integral/doc-base.i", DV_DIR_EXE);
 
 function CDTDocumentBasic::Make()
 {
