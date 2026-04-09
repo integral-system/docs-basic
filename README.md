@@ -13,8 +13,8 @@ This repository contains a collection of sample documents designed to showcase t
 ![INTEGRAL Basic Document Screenshot - 1](https://github.com/user-attachments/assets/aa61572a-5371-441b-b55d-f107dd881793)
 
 ### Math Typesetting
-* **Formula Pi (`formula_pi.i`):** A math equation for approximating the constant &pi;.
-* **Formula Pi Dynamic (`formula_pi_dynamic.i`):** A dynamic version of the previous equation, where the number of square roots is set to 7.
+* **Formula Pi (`formula_pi.i`):** A math equation for approximating the constant &pi; based on the limit of nested square roots (see https://functions.wolfram.com/02.03.09.0015.01).
+* **Formula Pi Dynamic (`formula_pi_dynamic.i`):** A dynamic version of the previous equation, where the number of nested square roots is set to 7.
 * **Text and Math (`text_and_math.i`):** A demonstration of mixing text, rich-text formatting and embedded mathematical equations.
 * **Math Complex (`math_complex-1.i`, `math_complex-2.i`):** Advanced mathematical typesetting using STIX v1 and STIX v2 fonts.
 
@@ -70,7 +70,7 @@ sudo ln -s /PATH_TO_INTEGRAL_EXTRACT_DIR/exec/integral-interp-linux /usr/local/b
 
 ### Download and Execute INTEGRAL Demos
 
-1. [Download](https://github.com/integral-system/docs-basic/archive/refs/heads/main.zip) or clone this repository (`docs-basic`):
+1. [Download](https://github.com/integral-system/docs-basic/archive/refs/heads/main.zip) or clone this repository (`docs-basic`).
 
 ```shell
 git clone https://github.com/integral-system/docs-basic.git
@@ -82,7 +82,7 @@ git clone https://github.com/integral-system/docs-basic.git
 cd docs-basic/
 ```
 
-3. Execute the demos:
+3. Execute the demos.
 
 **Windows**
 
