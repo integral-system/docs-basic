@@ -3,12 +3,12 @@
 ::my.include("../integral/common/includes/integral/doc-table.i", DV_DIR_EXE);
 ::my.include("../integral/common/includes/integral/doc-math.i", DV_DIR_EXE);
 
-function CDTDocumentBasic::Make(level, page_w, page_h)
+function CDTDocumentBasic::Make(page_w, page_h)
 {
 	SetMathParams({Autoformat = 1, Placeholders = 0});
 	UpdateBaseFormat({FontSize = 200, Align = DE_ALIGN_LEFT, TabstopPositions = "9600, 9800", TabstopFlags = "2, 0"});
 
-	/* formula example https://tex.stackexchange.com/questions/120271/alternatives-to-latex#120279 */
+	/* formula example from https://tex.stackexchange.com/questions/120271/alternatives-to-latex#120279 */
 	/* https://i.stack.imgur.com/vsn9C.png */
 
 	/* formatted symbols */
@@ -17,10 +17,7 @@ function CDTDocumentBasic::Make(level, page_w, page_h)
 	local f = {Text = "ƒ", Italic = 1};
 	local c = {Text = "c", Bold = 1};
 	local delta = {Text = "δ", Bold = 1, Italic = 1};
-
-	/* a shortcut */
-
-	local pd = PartialDifferentialItalic;
+	local pd = PartialDifferentialItalic; /* a shortcut */
 
 	/* lambda expressions */
 
@@ -76,7 +73,7 @@ local zoom = 0.06 + level * 0.02;
 local page_w = 8200, page_h = 7200;
 
 local doc = CDTDocumentBasic("fontmaps/stix-1.inf");
-doc.Make(level, page_w, page_h);
+doc.Make(page_w, page_h);
 doc.Cleanup();
 
 ::my.app.ReZoom(zoom);
